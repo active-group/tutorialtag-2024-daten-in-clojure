@@ -31,7 +31,7 @@
   [animal]
   (cond
     (is-a? dillo animal)
-    :fixme
+    (dillo-alive? animal false)
 
     (is-a? parrot animal)
-    :fixme))
+    (parrot-sentence animal "")))
