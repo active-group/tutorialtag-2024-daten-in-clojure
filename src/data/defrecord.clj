@@ -22,5 +22,6 @@
     (instance? Parrot animal)
     (assoc animal :sentence "")))
 
-;; aber:
-;; 
+;; Typ-Tag steht jetzt dran:
+;; - immer noch kein "information hiding"
+;; - Felder können entfernt / hinzugefügt werden
