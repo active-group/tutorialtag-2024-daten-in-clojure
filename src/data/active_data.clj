@@ -12,6 +12,7 @@
 ;; - lebendig oder nicht -UND-
 ;; - Gewicht
 ;; -> zusammengesetzte Daten
+(def-record dillo [alive? weight])
 
 ;; Papagei hat folgende Eigenschaften:
 ;; - Satz -UND-
