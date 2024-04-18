@@ -1,6 +1,7 @@
 (ns data.active-data
   (:require [active.data.record :refer [def-record is-a?]]
             [active.data.realm :as realm]
+            [active.data.realm.attach :as realm-attach]
             [active.data.realm.validation :as realm-validation]))
 
 ;; Datenmodellierung
@@ -31,7 +32,7 @@
 (def parrot1 (parrot parrot-sentence "hello!" parrot-weight 1))
 (def parrot2 (parrot parrot-sentence "goodbye!" parrot-weight 2))
 
-(defn run-over-animal
+(realm-attach/defn run-over-animal
   [animal]
   (cond
     (is-a? dillo animal)
