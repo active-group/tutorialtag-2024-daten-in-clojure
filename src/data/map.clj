@@ -6,3 +6,7 @@
 (defn make-dillo
   [alive? weight]
   {:alive? true :weight 10})
+
+(defn dillo-weight
+  [dillo]
+  (:weight dillo))
