@@ -35,7 +35,7 @@
   [parrot]
   (assoc parrot :sentence ""))
 
-(def run-over-animal
+(defn run-over-animal
   [animal]
   (case (:type animal)
     :dillo (run-over-dillo animal)
