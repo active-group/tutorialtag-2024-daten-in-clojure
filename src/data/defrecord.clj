@@ -20,4 +20,7 @@
     (assoc animal :alive? false)
 
     (instance? Parrot animal)
-    (assoc animal :sentence false)))
+    (assoc animal :sentence "")))
+
+;; aber:
+;; 
