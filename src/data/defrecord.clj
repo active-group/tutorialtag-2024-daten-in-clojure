@@ -27,3 +27,4 @@
 ;; - Felder können entfernt / hinzugefügt werden
 ;; - gelegentlich Probleme mit Records bei Ahead-of-time-Compilierung
 ;; --> aber gut als Java-Interop
+;; - kaum integriert clojure.spec
