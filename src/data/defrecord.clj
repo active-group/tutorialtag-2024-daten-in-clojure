@@ -25,3 +25,5 @@
 ;; Typ-Tag steht jetzt dran:
 ;; - immer noch kein "information hiding"
 ;; - Felder können entfernt / hinzugefügt werden
+;; - gelegentlich Probleme mit Records bei Ahead-of-time-Compilierung
+;; --> aber gut als Java-Interop
