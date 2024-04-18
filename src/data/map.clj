@@ -42,3 +42,13 @@
     :parrot (run-over-parrot animal)))
     
 
+;; Maps:
+;; - vollkommen transparent
+;; - schwer zu ändern
+;; - kein "information hiding"
+;; - :type reine Konvention
+;; - trivial zu fälschen
+;; - keine inhärente Validierung
+;; - clojure.spec für Schemata von Maps
+;; - => Validierung immer tief
+;;   => seit vielen Jahren da, aber immer noch alpha
