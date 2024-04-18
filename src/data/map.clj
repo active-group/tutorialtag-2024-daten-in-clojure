@@ -32,7 +32,7 @@
 
 
 (defn run-over-parrot
-  [parrot]p
+  [parrot]
   (assoc parrot :sentence ""))
 
 
