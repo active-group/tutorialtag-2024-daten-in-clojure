@@ -12,18 +12,18 @@
 ;; - lebendig oder nicht -UND-
 ;; - Gewicht
 ;; -> zusammengesetzte Daten
-(def-record dillo [alive? weight])
+(def-record dillo [dillo-alive? dillo-weight])
 
 ;; alive? und weight sind neue Objekte, können privat gemacht werden
 
-(def dillo1 (dillo alive? true weight 10))
-(def dillo2 (dillo alive? false weight 8))
+(def dillo1 (dillo dillo-alive? true dillo-weight 10))
+(def dillo2 (dillo dillo-alive? false dillo-weight 8))
 
 ;; Papagei hat folgende Eigenschaften:
 ;; - Satz -UND-
 ;; - Gewicht
-(def-record parrot [sentence weight])
+(def-record parrot [parrot-sentence parrot-weight])
 
-(def parrot1 (parrot sentence "hello!" weight 1))
-(def parrot2 (parrot sentence "goodbye!" weight 2))
+(def parrot1 (parrot parrot-sentence "hello!" parrot-weight 1))
+(def parrot2 (parrot parrot-sentence "goodbye!" parrot-weight 2))
 
