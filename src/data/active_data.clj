@@ -43,3 +43,11 @@
 
     (is-a? parrot animal)
     (parrot-sentence animal "")))
+
+;; interface Animal { void runOver(); }
+;; class Dillo implements Animal { @Override void runOver() { ... } }
+
+;; neue Fälle bedingen keine Änderung am existierenden Code
+;   OOP :-) FP :-(
+
+;; neue Funktionen: OOP :-( FP :-)
