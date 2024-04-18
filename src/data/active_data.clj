@@ -14,6 +14,9 @@
 ;; -> zusammengesetzte Daten
 (def-record dillo [alive? weight])
 
+(def dillo1 (dillo alive? true weight 10))
+(def dillo2 (dillo alive? false weight 8))
+
 ;; Papagei hat folgende Eigenschaften:
 ;; - Satz -UND-
 ;; - Gewicht
