@@ -17,6 +17,8 @@
 ;; Gürteltier überfahren
 (defn run-over-dillo
   [dillo]
-  {:alive? false :weight (:weight dillo)})
+  (assoc dillo :alive? false)
+  #_{:alive? false :weight (:weight dillo)})
+
 
 
