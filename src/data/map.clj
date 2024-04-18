@@ -20,5 +20,11 @@
   (assoc dillo :alive? false)
   #_{:alive? false :weight (:weight dillo)})
 
+;; Gürteltier füttern
+(defn feed-dillo
+  [dillo amount]
+  (if (:alive? dillo) 
+    (assoc dillo :weight (+ (:weight dillo) amount))
+    dillo))
 
 
