@@ -32,8 +32,11 @@
 (def parrot1 (parrot parrot-sentence "hello!" parrot-weight 1))
 (def parrot2 (parrot parrot-sentence "goodbye!" parrot-weight 2))
 
-(realm-attach/defn run-over-animal
-  [animal]
+(def animal
+  (realm/union dillo parrot))
+
+(realm-attach/defn run-over-animal :- animal
+  [animal :- animal]
   (cond
     (is-a? dillo animal)
     (dillo-alive? animal false)
