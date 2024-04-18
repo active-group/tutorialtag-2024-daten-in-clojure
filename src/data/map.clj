@@ -14,3 +14,9 @@
 (def parrot1 {:sentence "hello!" :weight 1})
 (def parrot2 {:sentence "goodbye!" :weight 2})
 
+;; Gürteltier überfahren
+(defn run-over-dillo
+  [dillo]
+  {:alive? false :weight (:weight dillo)})
+
+
