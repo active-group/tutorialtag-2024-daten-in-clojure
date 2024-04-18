@@ -1,5 +1,6 @@
 (ns data.active-data
-  (:require [active.data.record :refer [def-record is-a?]]))
+  (:require [active.data.record :refer [def-record is-a?]]
+            [active.data.realm :as realm]))
 
 ;; Datenmodellierung
 
