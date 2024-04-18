@@ -27,3 +27,11 @@
 (def parrot1 (parrot parrot-sentence "hello!" parrot-weight 1))
 (def parrot2 (parrot parrot-sentence "goodbye!" parrot-weight 2))
 
+(defn run-over-animal
+  [animal]
+  (cond
+    (is-a? dillo animal)
+    :fixme
+
+    (is-a? parrot animal)
+    :fixme))
