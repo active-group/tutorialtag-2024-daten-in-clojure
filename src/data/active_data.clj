@@ -24,7 +24,8 @@
 ;; Papagei hat folgende Eigenschaften:
 ;; - Satz -UND-
 ;; - Gewicht
-(def-record parrot [parrot-sentence parrot-weight])
+(def-record parrot [parrot-sentence :- realm/string
+                    parrot-weight :- realm/number])
 
 (def parrot1 (parrot parrot-sentence "hello!" parrot-weight 1))
 (def parrot2 (parrot parrot-sentence "goodbye!" parrot-weight 2))
