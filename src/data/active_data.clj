@@ -13,7 +13,8 @@
 ;; - lebendig oder nicht -UND-
 ;; - Gewicht
 ;; -> zusammengesetzte Daten
-(def-record dillo [dillo-alive? dillo-weight])
+(def-record dillo [dillo-alive? :- realm/boolean
+                   dillo-weight :- realm/number])
 
 ;; alive? und weight sind neue Objekte, können privat gemacht werden
 
