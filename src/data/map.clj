@@ -1,6 +1,6 @@
 (ns data.map)
 
-(def dillo1 {:type :dillo :alive? true :weight 10})
+(def dillo1 {:type :dillo :alive? true :weight-kg 10})
 (def dillo2 {:type :dillo :alive? false :weight 8})
 
 (defn make-dillo
