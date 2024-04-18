@@ -28,3 +28,10 @@
 ;; - gelegentlich Probleme mit Records bei Ahead-of-time-Compilierung
 ;; --> aber gut als Java-Interop
 ;; - kaum integriert clojure.spec
+
+;; Idee: Records bei der Erzeugung validieren
+
+;; Yaron Minsky: "Make illegal states unrepresentable."
+
+;; => invalide Objekte gar nicht erst erzeugen
+
