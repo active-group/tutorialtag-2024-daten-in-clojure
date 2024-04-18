@@ -1,4 +1,5 @@
-(ns data.active-data)
+(ns data.active-data
+  (:require [active.data.record :refer [def-record is-a?])))
 
 ;; Datenmodellierung
 
