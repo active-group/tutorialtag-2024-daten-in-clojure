@@ -25,7 +25,7 @@
   [dillo amount]
   (if (:alive? dillo) 
     ;; (assoc dillo :weight (+ (:weight dillo) amount))
-    (update dillo :weight (fn [old-weight] (+ old-weight + amount))) 
+    (update dillo :weight (fn [old-weight] (+ old-weight amount))) 
     dillo))
 
 
