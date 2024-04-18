@@ -24,3 +24,6 @@
 ;; - Gewicht
 (def-record parrot [sentence weight])
 
+(def parrot1 (parrot sentence "hello!" weight 1))
+(def parrot2 (parrot sentence "goodbye!" weight 2))
+
