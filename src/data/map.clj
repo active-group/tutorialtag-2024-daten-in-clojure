@@ -1,7 +1,7 @@
 (ns data.map)
 
-(def dillo1 {:alive? true :weight 10})
-(def dillo2 {:alive? false :weight 8})
+(def dillo1 {:type :dillo :alive? true :weight 10})
+(def dillo2 {:type :dillo :alive? false :weight 8})
 
 (defn make-dillo
   [alive? weight]
@@ -11,8 +11,8 @@
   [dillo]
   (:weight dillo))
 
-(def parrot1 {:sentence "hello!" :weight 1})
-(def parrot2 {:sentence "goodbye!" :weight 2})
+(def parrot1 {:type :parrot :sentence "hello!" :weight 1})
+(def parrot2 {:type :parrot :sentence "goodbye!" :weight 2})
 
 ;; Gürteltier überfahren
 (defn run-over-dillo
@@ -35,4 +35,10 @@
   [parrot]
   (assoc parrot :sentence ""))
 
+(def run-over-animal
+  [animal]
+  (case (:type animal)
+    :dillo (run-over-dillo animal)
+    :parrot (run-over-parrot animal)))
+    
 
