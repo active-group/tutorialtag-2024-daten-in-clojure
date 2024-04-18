@@ -31,8 +31,8 @@
     dillo))
 
 
-(def run-over-parrot
-  [parrot]
+(defn run-over-parrot
+  [parrot]p
   (assoc parrot :sentence ""))
 
 
